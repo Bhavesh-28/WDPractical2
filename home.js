@@ -48,7 +48,7 @@ function checkNumber(event) {
 function checkEmail(event) {
 	const emailError = document.getElementById("emailError");
 	let value = event.target.value;
-	let emailRegex = /^[a-z.]+@[a-z.]+$/
+	let emailRegex = /^[a-z0-9.]+@[a-z0-9.]+$/
 
 	if (!emailRegex.test(value)) {
 		emailError.style.display = "block";
